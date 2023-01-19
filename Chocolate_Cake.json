@@ -1,0 +1,179 @@
+{
+	"siteVersion": "1.174.3",
+	"_meta": {
+		"sources": [
+			{
+				"json": "TalesofExandriaMonstruary",
+				"abbreviation": "ToEM",
+				"full": "Tales of Exandria Monstruary",
+				"url": "https://github.com/TalesofExandria/Tales-of-Exandria-Monstruary.git",
+				"authors": [
+					"Tales of Exandria Discord Server"
+				],
+				"convertedBy": [
+					"Tales of Exandria Discord Server"
+				],
+				"version": "unknown"
+			}
+		],
+		"dateAdded": 1674140109,
+		"dateLastModified": 1674140109
+	},
+	"monster": [
+		{
+			"name": "Chocolate Cake",
+			"size": [
+				"L"
+			],
+			"type": "aberration",
+			"source": "TalesofExandriaMonstruary",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "19d10 + 54",
+				"average": 180
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 18,
+			"int": 10,
+			"wis": 12,
+			"cha": 8,
+			"passive": 11,
+			"cr": "11",
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"trait": [
+				{
+					"name": "False Appearance (Mimic)",
+					"entries": [
+						"While the Chocolate Cake remains motionless, it is indistinguishable from an ordinary cake."
+					]
+				},
+				{
+					"name": "Acid Absorption",
+					"entries": [
+						"Whenever the the Chocolate Cake is subjected to acid damage, it takes no damage and instead regains a number of hit points equal to the acid damage dealt."
+					]
+				}
+			],
+			"traitTags": [
+				"Damage Absorption",
+				"False Appearance"
+			],
+			"shortName": true,
+			"senses": [
+				"blindsight 60 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"save": {
+				"con": "+8",
+				"str": "+9"
+			},
+			"skill": {
+				"athletics": "+9",
+				"intimidation": "+3",
+				"stealth": "+11"
+			},
+			"immune": [
+				"acid",
+				"lightning",
+				"psychic"
+			],
+			"languages": [
+				"Deep Speech",
+				"Common"
+			],
+			"languageTags": [
+				"DS",
+				"C"
+			],
+			"damageTags": [
+				"A",
+				"P"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Chocolate Cake makes one Bite attack and the Acid Spit attack or use your Chocolate Rain."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 5}) piercing damage, plus 10 ({@damage 3d6}) acid damage. "
+					]
+				},
+				{
+					"name": "Acid Stuffing Spit",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 40/80 ft., one target. {@h}6 ({@damage 1d6 + 3}) acid damage."
+					]
+				},
+				{
+					"name": "Chocolate Rain {@recharge}",
+					"entries": [
+						"The chocolate cake wobbles and sour chocolate flies in all directions within 30ft of it. Each creature within the area must make a {@dc 16} Dexterity saving throw or be covered in chocolate. On a failed save, the creature takes 18 ({@damage 6d6}) acid damage, and until someone takes an action to remove the acid, the creature takes 5 ({@damage 1d10}) acid damage at the start of each of its turns. On a success, the creature takes half damage and is unaffected by the acid on subsequent turns."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"legendaryHeader": [
+				"The Chocolate Cake can take 3 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The gold greatwyrm regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Acid Stuffing Spit",
+					"entries": [
+						"The Chocolate Cake make one attack with its Acid Stuffing Spit"
+					]
+				},
+				{
+					"name": "Sweetness (Costs 2 actions)",
+					"entries": [
+						"Choose a creature that the Chocolate Cake can see. The creature must make a {@dc 16} Wisdom saving throw or become {@condition charmed} by the sweetness of the Chocolate Cake. While in this condition, the creature must use its movement to approach the Chocolate Cake and it will be craving it. The creature can't attack the cake, and it can repeat the saving throw at the end of its turn."
+					]
+				},
+				{
+					"name": "Chocolate Rain (Costs 3 actions)",
+					"entries": [
+						"Chocolate Cake automatically recharges your Chocolate Rain"
+					]
+				}
+			],
+			"conditionInflict": [
+				"charmed"
+			]
+		}
+	]
+}
