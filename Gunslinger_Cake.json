@@ -1,0 +1,135 @@
+{
+	"siteVersion": "1.174.4",
+	"_meta": {
+		"sources": [
+			{
+				"json": "TalesofExandriaMonstruary",
+				"abbreviation": "ToEM",
+				"full": "Tales of Exandria Monstruary",
+				"url": "https://github.com/TalesofExandria/Tales-of-Exandria-Monstruary.git",
+				"authors": [
+					"Tales of Exandria Discord Server"
+				],
+				"convertedBy": [
+					"Tales of Exandria Discord Server"
+				],
+				"version": "unknown"
+			}
+		],
+		"dateAdded": 1675516522,
+		"dateLastModified": 1675516522
+	},
+	"monster": [
+		{
+			"name": "Gunslinger Cake",
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"source": "TalesofExandriaMonstruary",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "11d8 + 22",
+				"average": 71
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 14,
+			"int": 8,
+			"wis": 10,
+			"cha": 8,
+			"passive": 10,
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Acid Absorption",
+					"entries": [
+						"Whenever the Gunslinger Cake is subjected to acid damage, it takes no damage and instead regains a number of hit points equal to the acid damage dealt."
+					]
+				},
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the Gunslinger Cake remains motionless, it is indistinguishable from an ordinary cake."
+					]
+				}
+			],
+			"traitTags": [
+				"Damage Absorption",
+				"False Appearance"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"skill": {
+				"athletics": "+4",
+				"acrobatics": "+5",
+				"stealth": "+7"
+			},
+			"save": {
+				"str": "+4",
+				"dex": "+5"
+			},
+			"bonus": [
+				{
+					"name": "Acid pistol spray {@recharge 5}",
+					"entries": [
+						"Acid is sprayed from the Gunslinger Cake pistol at a 15 feet cone. Each creature in the cone must succeed on a {@dc 14} Constitution saving throw or be {@condition blinded} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Gunslinger Cake makes two attacks with your acid pistol."
+					]
+				},
+				{
+					"name": "Acid pistol",
+					"entries": [
+						"{@atk rw} {@hit +5} to hit, range 30/90 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage plus 7 ({@damage 2d6}) acid damage."
+					]
+				}
+			],
+			"damageTags": [
+				"A",
+				"P"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"languages": [
+				"Common",
+				"Deep Speech"
+			],
+			"languageTags": [
+				"C",
+				"DS"
+			],
+			"senses": [
+				"blindsight 30 ft."
+			],
+			"senseTags": [
+				"B"
+			]
+		}
+	]
+}

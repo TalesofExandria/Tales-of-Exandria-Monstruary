@@ -1,0 +1,130 @@
+{
+	"siteVersion": "1.174.4",
+	"_meta": {
+		"sources": [
+			{
+				"json": "TalesofExandriaMonstruary",
+				"abbreviation": "ToEM",
+				"full": "Tales of Exandria Monstruary",
+				"url": "https://github.com/TalesofExandria/Tales-of-Exandria-Monstruary.git",
+				"authors": [
+					"Tales of Exandria Discord Server"
+				],
+				"convertedBy": [
+					"Tales of Exandria Discord Server"
+				],
+				"version": "unknown"
+			}
+		],
+		"dateAdded": 1675516518,
+		"dateLastModified": 1675516518
+	},
+	"monster": [
+		{
+			"name": "Cupcake",
+			"size": [
+				"T"
+			],
+			"type": "aberration",
+			"source": "TalesofExandriaMonstruary",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "3d4 + 3",
+				"average": 10
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 8,
+			"con": 12,
+			"int": 8,
+			"wis": 10,
+			"cha": 6,
+			"passive": 10,
+			"cr": "1/4",
+			"damageTagsLegendary": [
+				"N"
+			],
+			"senses": [
+				"blindsight 15 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"skill": {
+				"acrobatics": "+1",
+				"stealth": "+3"
+			},
+			"save": {
+				"dex": "+1"
+			},
+			"trait": [
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While the Cupcake cake remains motionless, it is indistinguishable from an ordinary cupcake."
+					]
+				},
+				{
+					"name": "Kamikaze",
+					"entries": [
+						"When reduced to 0 hit points, it explodes and acid cake flies in all directions. Each creature within 5 feet of Cupcake must make a {@dc 13} Dexterity saving throw or take 6 ({@dice 2d6}) acid damage."
+					]
+				},
+				{
+					"name": "Acid Absorption",
+					"entries": [
+						"Whenever the cupcake is subjected to acid damage, it takes no damage and instead regains a number of hit points equal to the acid damage dealt."
+					]
+				}
+			],
+			"traitTags": [
+				"Damage Absorption",
+				"False Appearance"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"damageTags": [
+				"A",
+				"P"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/uqzg12g.jpg"
+						}
+					}
+				]
+			},
+			"languages": [
+				"Common",
+				"Deep Speech"
+			],
+			"languageTags": [
+				"C",
+				"DS"
+			],
+			"tokenUrl": "https://i.imgur.com/HaX8OWg.png"
+		}
+	]
+}
