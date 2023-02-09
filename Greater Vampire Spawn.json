@@ -1,0 +1,160 @@
+{
+	"name": "Greater Vampire Spawn",
+	"source": "HomebrewdoMestreMateus",
+	"size": [
+		"M"
+	],
+	"type": "undead",
+	"alignment": [
+		"L",
+		"E"
+	],
+	"ac": [
+		11
+	],
+	"hp": {
+		"formula": "16d8 + 48",
+		"average": 120
+	},
+	"speed": {
+		"walk": 30
+	},
+	"str": 18,
+	"dex": 13,
+	"con": 16,
+	"int": 10,
+	"wis": 18,
+	"cha": 13,
+	"save": {
+		"dex": "+4",
+		"str": "+7"
+	},
+	"skill": {
+		"stealth": "+4",
+		"athletics": "+7"
+	},
+	"senses": [
+		"darkvision 60 ft."
+	],
+	"passive": 14,
+	"resist": [
+		{
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"note": "from nonmagical attacks",
+			"cond": true
+		}
+	],
+	"immune": [
+		"necrotic",
+		"poison"
+	],
+	"vulnerable": [
+		"radiant"
+	],
+	"conditionImmune": [
+		"poisoned"
+	],
+	"languages": [
+		"Common"
+	],
+	"cr": "7",
+	"trait": [
+		{
+			"name": "Regeneration",
+			"entries": [
+				"The vampire regains 15 hit points at the start of its turn if it isn't in sunlight. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn."
+			]
+		},
+		{
+			"name": "Vampire Weaknesses",
+			"entries": [
+				"The vampire has the following flaws:",
+				"Sunlight Hypersensitivity. The vampire takes 10 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks"
+			]
+		},
+		{
+			"name": "Spider Climb",
+			"entries": [
+				"The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+			]
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"the vampire makes two fist attacks. if it has {@condition grappled} a target, it can make a bite attack as a bonus action"
+			]
+		},
+		{
+			"name": "Fist",
+			"entries": [
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d4 + 4}) bludgeoning damage.Instead of dealing damage, the vampire can grapple the target (escape {@dc 13})."
+			]
+		},
+		{
+			"name": "Bite",
+			"entries": [
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled} by the vampire, {@condition incapacitated}, or {@condition restrained}. {@h}6 ({@damage 1d6 + 4}) piercing damage plus 7 ({@damage 2d6}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.",
+				"The target must also make a {@dc 11} Constitution saving throw or take an extra 9 ({@damage 2d8}) necrotic damage and be infected with \"contaminação vampírica\". On a successful save the target take half as much damage and none aditional effect."
+			]
+		}
+	],
+	"environment": [
+		"underdark",
+		"urban"
+	],
+	"fluff": {
+		"entries": [
+			{
+				"type": "entries",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"greater vampire spwans are created when a true vampire infuse a living being with it's vampire blood. Because of it's transformation was made while alive, the greater spwan don't have some of it's master weaknesses. Them are under the vampire's lord orders, but has much more control of how they act than normal vampire spwans. A greater vampire span also can create others vampire spawns, by infusing them with his own vampiric essence, but them are under control of the true vampire that created the greater vampire spawn"
+						]
+					}
+				]
+			}
+		],
+		"images": [
+			{
+				"type": "image",
+				"href": {
+					"type": "external",
+					"url": "https://5etools-mirror-1.github.io/img/bestiary/BGDIA/Gideon Lightward.jpg"
+				}
+			}
+		]
+	},
+	"traitTags": [
+		"Regeneration",
+		"Spider Climb",
+		"Sunlight Sensitivity"
+	],
+	"senseTags": [
+		"D"
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"languageTags": [
+		"C"
+	],
+	"damageTags": [
+		"B",
+		"N",
+		"P"
+	],
+	"miscTags": [
+		"MW",
+		"HPR"
+	],
+	"hasFluff": true,
+	"hasFluffImages": true
+}
